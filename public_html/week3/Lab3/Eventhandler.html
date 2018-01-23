@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Event Handler</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Event Handler</div>
+
+        <label>Full Name</label> <input type="text" name="words" />
+        <br />
+        <input type="button" name="add" value="Add Text" />
+
+        <p class="header">My text is here</p>
+        <div></div>
+        <script>
+            
+            
+            
+            function addText() {
+
+                if (textField.value.length > 4) {
+
+                    label.classList.remove('error');
+                    let result = `<p> ${textField.value} </p>`;
+                    
+
+                } else {
+                    label.classList.add('error');
+                }
+
+            }
+
+
+        </script>
+        
+        <span><p> </p> </span>
+
+    </body>
+</html>

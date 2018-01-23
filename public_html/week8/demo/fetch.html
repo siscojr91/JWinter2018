@@ -9,12 +9,17 @@
         <div>TODO write content</div>
 
         <script>
-
-            for (let i = 0; i < 100; i++) {
-                console.log(i); // logs 0 - 100 to the canvas.
-            }
+                      
+            var myRequest = 'users.json'
+            
+            fetch(myRequest)
+            .then(function(response) {              
+                  return response.json()               
+            })
+            .then(function(json) { 
+                console.log(json)
+            })
            
         </script>
     </body>
 </html>
-
